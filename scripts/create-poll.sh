@@ -9,8 +9,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "poll": {
-      "option1": "By land",
-      "option2": "By sea"
+      "option1": "Late nights",
+      "option2": "Early mornings"
     }
   }'
 
