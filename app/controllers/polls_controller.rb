@@ -1,5 +1,5 @@
-class PollsController < ApplicationController
-  before_action :set_poll, only: [:show, :update, :destroy]
+class PollsController < OpenReadController
+  before_action :set_poll, only: [:update, :destroy]
 
   # GET /polls
   def index
@@ -19,8 +19,8 @@ class PollsController < ApplicationController
 
 #    @poll = current_user.poll.build(poll_params)
 #   need to puild in poll params
-    # if @poll.save
-    #   render json: @poll, status: :created, location: @poll
+    if @poll.save
+      render json: @poll, status: :created
     else
       render json: @poll.errors, status: :unprocessable_entity
     end
@@ -52,4 +52,5 @@ class PollsController < ApplicationController
       params.require(:poll).permit(:title, :question, :option1, :text, :option2, :text)
     end
     private :poll_params
+  end
 end
