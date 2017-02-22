@@ -4,7 +4,6 @@ class PollsController < OpenReadController
   # GET /polls
   def index
     @polls = Poll.all
-
     render json: @polls
   end
 
