@@ -1,4 +1,4 @@
-<% project_name = 'projec-two' %>
+<% project_name = 'pollAPI' %>
 
 default: &default
   adapter: postgresql
