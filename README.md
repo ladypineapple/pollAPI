@@ -4,6 +4,9 @@ https://ladypineapple.github.io/pollBrowser/
 API GITHUB URL:
 https://github.com/ladypineapple/pollAPI
 
+BROWSER GITHUB URL:
+https://github.com/ladypineapple/pollBrowser
+
 BACK END URL:
 https://serene-temple-92248.herokuapp.com/
 
